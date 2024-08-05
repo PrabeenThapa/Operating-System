@@ -1,0 +1,24 @@
+## 1. fork()
+The `fork()` system call is a fundamental operation in operating systems. It is used to create a new process by duplicating the calling process. The new process is called the child process, while the calling process is referred to as the parent process.
+Fork system call is used for creating a new process, which is called child process, which runs concurrently with the parent process. After a new child process is created, both processes will execute the next instruction following the `fork()` system call.
+
+## 2. exec()
+The `exec` system call is used to run an executable file in the context of an already existing process, replacing the previous executable. It is used to replace the current process image with a new one. This means that when you use the `exec` command, the current process terminates, and a new process starts.
+
+## 3. getpid()
+The `getpid()` function returns the PID of the calling process. It is used to obtain the process ID of the current process. This is useful in scenarios where a parent process needs to manage or coordinate with its child processes.
+
+## 4. wait()
+The `wait()` system call is used by a parent process to wait for its child processes to terminate. When a parent process calls `wait()`, it pauses execution until one of its child processes exits or a signal is received. This helps manage the lifecycle of child processes.
+
+## 5. stat()
+The `stat()` function is used to retrieve information about a file or directory. It provides details such as the file's size, permissions, owner, and timestamps. This function is commonly used in file management and system programming to retrieve file attributes.
+
+## 6. opendir()
+The `opendir()` function is used to open a directory stream. This directory stream can then be used to read the contents of the directory using other functions like `readdir()` and to close the directory stream with `closedir()`. It is commonly used in utilities that manage or analyze directory contents.
+
+## 7. readdir()
+The `readdir()` function is used to read directory entries from a directory stream opened with `opendir()`. It allows you to iterate through the contents of a directory and retrieve information about each file or subdirectory within it.
+
+## 8. close()
+The `close()` function is used to close a file descriptor, which is an integer handle used by the operating system to identify an open file, socket, or other I/O resource. Closing a file descriptor releases the associated resources and marks it as no longer in use.
